@@ -7,7 +7,9 @@ public with sharing class ReturnAccountNames {
     
    public static List<contact> getContacts()
    {
+        system.debug('returing contacts');
        return [select id,Name from contact limit 50000];
+       
    }
 
 }
