@@ -2,8 +2,11 @@ public with sharing class ReturnAccountNames {
     
     public static List<Account> getAccounts()
     {
-        system.debug('accout details');
-        return [select id,Name from account limit 10000];
+<<<<<<< HEAD
+       return [select id,Name from account limit 10000];
+=======
+       return [select id,Name from account limit 10000];
+>>>>>>> Demobranch2
     }
     
    public static List<contact> getContacts()
